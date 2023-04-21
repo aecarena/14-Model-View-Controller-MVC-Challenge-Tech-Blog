@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tech Blog</title>
+    <header><!--insert keyboard image--></header>
+    <h1>The Tech Blog</h1>
+    <Nav>
+
+            {{#if logged_in}}
+            <a href="/dashboard">dashboard</a> |
+            <button class="no-button" id="logout">logout</button>
+            {{else}}
+            <a href="/login">login</a>
+            {{/if}}
+          
+        </header>
+<!--insert navbar with options to sign up, log in/out, manage account, Categories, make post--></Nav>
+</head>
+<body>
+    <main class="">
+        <!-- Render the sub layout -->
+        {{{ body }}}
+      </main>
+    <!-- <h2>Latest News</h2>
+    <ul>
+        <li> source top articles from the news regarding tech companies</li>
+        <li>amazon</li>
+        <li>meta</li>
+        <li>google</li>
+        <li>microsoft</li>
+        <li>apple</li>
+    </ul> -->
+
+   <!--  <h2>New Posts!</h2>
+    <ul>
+        <li>< insert new posts here</li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+<sidebar class>
+    <h4> About Author</h4>
+    <h5>Ashley Arena</h5>
+    <p> <insert about me information</p>
+</sidebar-->
+ {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+</body>
+<footer>Contact</footer>
+<!-- insert github, gmail, linked in, code pen-->
+</html>
